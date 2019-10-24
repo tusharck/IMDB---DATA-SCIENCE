@@ -1,4 +1,4 @@
-# BIG DATA LAB 1 PROJECT (CMPT732) - IMDB DATA ANALYSIS
+# IMDB - DATA SCIENCE
 
 ![Top Votes](top_votes.png)
 
