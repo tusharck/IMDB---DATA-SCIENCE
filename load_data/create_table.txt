@@ -1,0 +1,158 @@
+CREATE KEYSPACE technoaces WITH REPLICATION = {
+'class': 'SimpleStrategy', 'replication_factor': 2 };
+
+#movies
+CREATE TABLE imdb_movies_data (
+imdb_id TEXT,
+Title TEXT,
+year INT,
+genre TEXT,
+country TEXT,
+language TEXT,
+imdb_score FLOAT,
+meta_score INT,
+votes INT,
+director TEXT,
+stars TEXT,
+description TEXT,
+image TEXT,
+runtimemins INT,
+PRIMARY KEY (imdb_id)
+);
+
+#TV SHOW
+CREATE TABLE imdb_tv_show_data (
+imdb_id TEXT,
+Title TEXT,
+genre TEXT,
+country TEXT,
+language TEXT,
+imdb_score FLOAT,
+votes INT,
+director TEXT,
+stars TEXT,
+description TEXT,
+image TEXT,
+runtimemins INT,
+start_year INT,
+end_year INT,
+PRIMARY KEY (imdb_id)
+);
+
+#Video Game
+CREATE TABLE imdb_video_game_data (
+imdb_id TEXT,
+Title TEXT,
+year INT,
+genre TEXT,
+country TEXT,
+language TEXT,
+imdb_score FLOAT,
+votes INT,
+director TEXT,
+stars TEXT,
+description TEXT,
+image TEXT,
+PRIMARY KEY (imdb_id)
+);
+#TV Moive
+CREATE TABLE imdb_tv_movie_data (
+imdb_id TEXT,
+Title TEXT,
+year INT,
+genre TEXT,
+country TEXT,
+language TEXT,
+imdb_score FLOAT,
+votes INT,
+director TEXT,
+stars TEXT,
+description TEXT,
+image TEXT,
+runtimemins INT,
+PRIMARY KEY (imdb_id)
+);
+
+#Video
+CREATE TABLE imdb_video_data (
+imdb_id TEXT,
+Title TEXT,
+year INT,
+genre TEXT,
+country TEXT,
+language TEXT,
+imdb_score FLOAT,
+votes INT,
+director TEXT,
+stars TEXT,
+description TEXT,
+image TEXT,
+runtimemins INT,
+PRIMARY KEY (imdb_id)
+);
+
+#TV Special
+CREATE TABLE imdb_tv_special_data (
+imdb_id TEXT,
+Title TEXT,
+year INT,
+genre TEXT,
+country TEXT,
+language TEXT,
+imdb_score FLOAT,
+votes INT,
+director TEXT,
+stars TEXT,
+description TEXT,
+image TEXT,
+runtimemins INT,
+PRIMARY KEY (imdb_id)
+);
+
+#TV Short
+CREATE TABLE imdb_tv_short_data (
+imdb_id TEXT,
+Title TEXT,
+year INT,
+genre TEXT,
+country TEXT,
+language TEXT,
+imdb_score FLOAT,
+votes INT,
+director TEXT,
+stars TEXT,
+description TEXT,
+image TEXT,
+runtimemins INT,
+PRIMARY KEY (imdb_id)
+);
+
+CREATE TABLE rotten_tomatoes (
+audience_average FLOAT,
+audience_percent FLOAT,
+audience_ratings FLOAT,
+critic_average FLOAT,
+critic_percent FLOAT,
+imdb_id TEXT,
+rotten_tomatoes_id TEXT,
+PRIMARY KEY (imdb_id,rotten_tomatoes_id)
+);
+
+
+CREATE TABLE imdb_test (
+imdb_id TEXT,
+Title TEXT,
+year INT,
+genre TEXT,
+country TEXT,
+language TEXT,
+imdb_score FLOAT,
+meta_score INT,
+votes INT,
+director TEXT,
+stars TEXT,
+description TEXT,
+image TEXT,
+runtimemins INT,
+PRIMARY KEY (imdb_id)
+);

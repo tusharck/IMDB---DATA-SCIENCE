@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.VectorAssembler","timestamp":1544127080759,"sparkVersion":"2.3.2","uid":"VectorAssembler_40eaa476b8bb19cc0625","paramMap":{"outputCol":"features","inputCols":["audience_average","audience_percent","audience_ratings"]}}
